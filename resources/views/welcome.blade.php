@@ -112,6 +112,13 @@
 
                                 <div class="pt-3 sm:pt-5">
                                     <h2 class="text-xl font-semibold text-black dark:text-white">Laracasts</h2>
+                                    <button class="btn">Button</button>
+                                    <button class="btn btn-neutral">Neutral</button>
+                                    <button class="btn btn-primary">Primary</button>
+                                    <button class="btn btn-secondary">Secondary</button>
+                                    <button class="btn btn-accent">Accent</button>
+                                    <button class="btn btn-ghost">Ghost</button>
+                                    <button class="btn btn-link">Link</button>
 
                                     <p class="mt-4 text-sm/relaxed">
                                         Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.

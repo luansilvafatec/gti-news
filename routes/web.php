@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route::view('/teste', 'tela-teste');
+
+Route::view('/cadastro', 'tela-cadastro');
