@@ -24,7 +24,7 @@ Route::post('/salva-usuario',
         $user->password = $request->senha;
         $user->save();
 
-        return "Salvo com sucesso";
+        return redirect()->route('home');
     }
 )->name('SalvaUsuario');
 
@@ -47,6 +47,14 @@ Route::post('/logar',
         ])->onlyInput('email');
     }
 )->name('logar');
+
+Route::get('/logout', 
+    function(Request $request){
+        Auth::logout();
+        $request->session()->regenerate();
+        return redirect()->route('home');
+    }
+)->name('logout');
 
 
 
